@@ -1,0 +1,25 @@
+spring:
+  graphql:
+    graphiql:
+      enabled: true
+      path: /graphiql
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: 'jdbc:h2:mem:graphql'
+    username: panda
+    password: 9779
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+  main:
+    banner-mode: off
+  h2:
+    console:
+      enabled: true
+logging:
+  level:
+    root: error
